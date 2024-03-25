@@ -2,14 +2,14 @@
 
 var mongoose = require("mongoose")
 
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 2500;
 
 // var port = process.env.PORT || 2500;
 
 var app = require("./app");
 /*mongodb+srv://antonyalaya96:a4Qw7NHqzxnbslWV@cluster0.77cqee1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0*/
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb+srv://antonyalaya96:a4Qw7NHqzxnbslWV@cluster0.77cqee1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", { useNewUrlParser: true })
+mongoose.connect("mongodb+srv://antonyalaya96:3yTXZx3UbiDOHdDm@cluster0.77cqee1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", { useNewUrlParser: true })
     .then(()=>{
         app.listen(port)
     })
