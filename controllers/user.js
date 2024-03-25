@@ -141,12 +141,16 @@ let controller = {
 
         if (fileExt == "jpg" || fileExt == "png" || fileExt == "jpeg") {
 
-            fs.unlink(fileDestination + req.user.image, async (err) => {
+            // fs.unlink(fileDestination + req.user.image, async (err) => {
 
-                data = { code: 200, image: filename }
+            //     data = { code: 200, image: filename }
 
-                return res.json(data)
-            })
+            //     return res.json(data)
+            // })
+            data = { code: 200, image: filename }
+
+            return res.json(data)
+
 
         } else {
 
