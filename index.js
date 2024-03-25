@@ -1,7 +1,10 @@
 'use strict'
 
 var mongoose = require("mongoose")
-var port = process.env.PORT || 2500;
+
+var port = "https://api-rest-node-mongo-foro.vercel.app/"
+
+// var port = process.env.PORT || 2500;
 
 var app = require("./app");
 /*mongodb+srv://antonyalaya96:a4Qw7NHqzxnbslWV@cluster0.77cqee1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0*/
@@ -10,4 +13,4 @@ mongoose.connect("mongodb+srv://antonyalaya96:a4Qw7NHqzxnbslWV@cluster0.77cqee1.
     .then(()=>{
         app.listen(port)
     })
-    .catch(error => "sda")
+    .catch(error => console.log(error))
