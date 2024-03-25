@@ -2,7 +2,7 @@
 
 var mongoose = require("mongoose")
 
-var port = "https://api-rest-node-mongo-foro.vercel.app"
+var port = process.env.PORT || 3000;
 
 // var port = process.env.PORT || 2500;
 
